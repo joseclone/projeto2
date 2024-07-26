@@ -55,8 +55,8 @@ sed -i "6a\     return HttpResponse('Chegou')" $aplicacao/views.py
 
 
 read -p "Digite o nome do modelo (models.py)" model
-read -p "Digite o nome do atributo (models.py)" atrib
-
+# read -p "Digite o nome do atributo (models.py)" atrib
+atrib='nome'
                     #MODELS
 sed -i "3a\ " $aplicacao/models.py
 sed -i "4a\class $model(models.Model):" $aplicacao/models.py
